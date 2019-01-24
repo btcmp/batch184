@@ -1,3 +1,6 @@
+# ORACLE INTRO SQL SAMPLE SCRIPT
+
+```sql
 -- DML 
 -- CRUD
 -- 1. create => Insert 
@@ -177,3 +180,4 @@ join departments dept
 on emp.department_id = dept.department_id
 group by dept.department_name 
 having avg(salary) > (select avg(salary) from employees) --subquery
+```
