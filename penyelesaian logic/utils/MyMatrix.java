@@ -20,10 +20,33 @@ public class MyMatrix {
 		}
 	}
 	
+	public void showClear() {
+		for (int i = 0; i < this.baris; i++) {
+			for (int j = 0; j < this.kolom; j++) {
+				if(this.matrix[i][j] != null) {
+					System.out.print(this.matrix[i][j] + "\t");
+				} else {
+					System.out.print("\t");
+				}
+				
+			}
+			System.out.println();
+		}
+	}
+	
 	public void show() {
 		for (int i = 0; i < this.baris; i++) {
 			for (int j = 0; j < this.kolom; j++) {
 				System.out.print(this.matrix[i][j] + "\t");
+			}
+			System.out.println();
+		}
+	}
+	
+	public void showLeft() {
+		for (int i = 0; i < this.kolom; i++) {
+			for (int j = 0; j < this.baris; j++) {
+				System.out.print(this.matrix[j][i] + "\t");
 			}
 			System.out.println();
 		}

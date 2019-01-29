@@ -17,6 +17,20 @@ public class DeretAngka {
 		return data;
 	}
 	
+	//
+	public static int[] get3bonachi(int n) {
+		int[] data = new int[n];
+		//logic fibo
+		data[0] = 1;
+		data[1] = 1;
+		data[2] = 1;
+		for(int i = 3; i < n; i++) {
+			data[i] = data[i - 1] + data[i - 2]+ data[i - 3];
+		}
+		
+		return data;
+	}
+	
 	//1,3,5...
 	public static int[] getOdd(int n) {
 		int[] data = new int[n];
